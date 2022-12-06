@@ -6,14 +6,12 @@ object MarkerSearcher{
     def main(args: Array[String]) = {
         val word = readlines(scrdir)
         val recordedindex = getpacket(word, 4)
+        
         println(recordedindex.slice(0,1))
-
     }
 
     def ifrepeat(piece: String) = {
-        //println(piece.toSet.toList == piece.toList)
-        piece.toSet.toList.sorted == piece.toList.sorted
-        
+        piece.toSet.toList.sorted == piece.toList.sorted        
     }
 
 
