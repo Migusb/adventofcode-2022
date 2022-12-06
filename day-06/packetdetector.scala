@@ -1,12 +1,12 @@
 import scala.io.Source
 
-object MarkerSearcher{
+object MarkerFinder{
     val scrdir = "/home/migusb/projects/adventofcode-2022/day-06/input.txt"
 
     def main(args: Array[String]) = {
         val word = readlines(scrdir)
         val recordedindex = getpacket(word, 4)
-        
+
         println(recordedindex.slice(0,1))
     }
 
